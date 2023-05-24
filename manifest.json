@@ -1,0 +1,50 @@
+{
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "pinned_any_web@brzl.com.ar"
+        }
+    },
+    "manifest_version": 2,
+    "name": "Pinned Any Web",
+    "version": "1.0.0",
+    "description": "Go to the configured webpage pinned tab. If it doesn't exist, it's created.",
+    "icons": {
+        "48": "icons/pinned_any_web-48.png",
+        "64": "icons/pinned_any_web-64.png",
+        "96": "icons/pinned_any_web-96.png"
+    },
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "browser_action": {
+        "default_icon": {
+            "32": "icons/pinned_any_web-32.png"
+        },
+        "default_title": "Pinned Any Web",
+        "default_area": "navbar",
+        "theme_icons": [
+            {
+                "light": "icons/pinned_any_web-32-dark_mode.png",
+                "dark": "icons/pinned_any_web-32.png",
+                "size": 32
+            }
+        ]
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Alt+Shift+A"
+            }
+        }
+    },
+    "options_ui": {
+        "page": "options/options.html",
+        "browser_style": true
+    }
+}

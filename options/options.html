@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="options.css" rel="stylesheet" type="text/css">
+    </link>
+</head>
+
+<body>
+    <form>
+        <label>Webpage's URL: </label>
+        <input id="webpage" type="text" class="inputText">
+    </form>
+    
+    <form>
+        <label>Keyboard shortcut: </label>
+        <input id="shortcut" type="text" class="inputText">
+        <input id="reset" type="button" value="Reset">
+    </form>
+    <div id="errorMessage" class="hidden">Invalid shortcut, please try another one!</div>
+    <div id="updatedMessage" class="hidden">Settings saved!</div>
+
+    <script src="keyboard.js"></script>
+    <script src="options.js"></script>
+</body>
+
+</html>
